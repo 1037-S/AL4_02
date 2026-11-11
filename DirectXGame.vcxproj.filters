@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="シェーダー ファイル">
+      <UniqueIdentifier>{718c7f4c-fc51-40ad-a221-b9456a7a1a3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="データ関連">
+      <UniqueIdentifier>{8a262014-e5e0-4ed1-9846-65369f1efc4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="データ関連\マップ">
+      <UniqueIdentifier>{7c382958-e031-4dca-b0a8-266d1aa016b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="継承用">
+      <UniqueIdentifier>{ed0c2a71-d2e9-4be9-8164-35976c3db198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="シーン">
+      <UniqueIdentifier>{713bd0cc-f914-43bc-846f-0182e3f7ad19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="シーン\タイトル">
+      <UniqueIdentifier>{13b78069-d3e1-4d0e-9aaa-96a56174e942}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="シーン\ゲーム">
+      <UniqueIdentifier>{e50e5ee7-bdc0-4438-b7e3-56cc4b80da53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="シーン\ゲームオーバー">
+      <UniqueIdentifier>{d48724b5-6f20-45ea-9347-6ad3d0708b67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="シーン\リザルト">
+      <UniqueIdentifier>{ab3063e5-bc5d-4240-ac2e-921a64a8832b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="シーン\ポーズ">
+      <UniqueIdentifier>{fb9e8277-81db-479a-b1bc-6595f6474d28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="カメラ">
+      <UniqueIdentifier>{befdea10-e212-452a-8c23-b36e37c3dbf1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MapChipField.cpp">
+      <Filter>データ関連\マップ</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraController.cpp">
+      <Filter>カメラ</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Resources\shaders\SpritePS.hlsl">
+      <Filter>シェーダー ファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\shaders\SpriteVS.hlsl">
+      <Filter>シェーダー ファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\shaders\ShapeVS.hlsl">
+      <Filter>シェーダー ファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\shaders\ShapePS.hlsl">
+      <Filter>シェーダー ファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\shaders\ObjPS.hlsl">
+      <Filter>シェーダー ファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\shaders\ObjVS.hlsl">
+      <Filter>シェーダー ファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\shaders\PrimitivePS.hlsl">
+      <Filter>シェーダー ファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\shaders\PrimitiveVS.hlsl">
+      <Filter>シェーダー ファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\shaders\TerrainPS.hlsl">
+      <Filter>シェーダー ファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\shaders\TerrainVS.hlsl">
+      <Filter>シェーダー ファイル</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shaders\Sprite.hlsli">
+      <Filter>シェーダー ファイル</Filter>
+    </None>
+    <None Include="Resources\shaders\Shape.hlsli">
+      <Filter>シェーダー ファイル</Filter>
+    </None>
+    <None Include="Resources\shaders\Obj.hlsli">
+      <Filter>シェーダー ファイル</Filter>
+    </None>
+    <None Include="Resources\shaders\Primitive.hlsli">
+      <Filter>シェーダー ファイル</Filter>
+    </None>
+    <None Include="Resources\shaders\Terrain.hlsli">
+      <Filter>シェーダー ファイル</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MapChipField.h">
+      <Filter>データ関連\マップ</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>継承用</Filter>
+    </ClInclude>
+    <ClInclude Include="Skill.h">
+      <Filter>継承用</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle.h">
+      <Filter>継承用</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraController.h">
+      <Filter>カメラ</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
