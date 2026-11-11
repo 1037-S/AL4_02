@@ -163,10 +163,16 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\AABBFunction.cpp" />
+    <ClCompile Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\Matrix4x4Function.cpp" />
+    <ClCompile Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\Vector3Function.cpp" />
+    <ClCompile Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\WorldTransformFunction.cpp" />
     <ClCompile Include="CameraController.cpp" />
+    <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MapChipField.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Skydome.cpp" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Resources\shaders\TerrainPS.hlsl">
@@ -266,12 +272,18 @@
     <None Include="Resources\shaders\Sprite.hlsli" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\AABBFunction.h" />
+    <ClInclude Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\Matrix4x4Function.h" />
+    <ClInclude Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\Vector3Function.h" />
+    <ClInclude Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\WorldTransformFunction.h" />
     <ClInclude Include="CameraController.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="GameScene.h" />
     <ClInclude Include="MapChipField.h" />
     <ClInclude Include="Particle.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Skill.h" />
+    <ClInclude Include="Skydome.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

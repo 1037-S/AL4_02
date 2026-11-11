@@ -46,6 +46,27 @@
     <Filter Include="カメラ">
       <UniqueIdentifier>{befdea10-e212-452a-8c23-b36e37c3dbf1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="数学関数">
+      <UniqueIdentifier>{8f8384f1-ee32-4ea3-9f39-88ae353b5ac5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="数学関数\Matrix4x4">
+      <UniqueIdentifier>{d18d36cc-fd66-44bf-8f6c-a4b96c2f57ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="数学関数\Matrix3x3">
+      <UniqueIdentifier>{5c710b63-f5a6-4241-b358-6482cac748ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="数学関数\Vector3">
+      <UniqueIdentifier>{ca724346-1b2a-4fa4-83a4-6b86e4e73646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="数学関数\Vector2">
+      <UniqueIdentifier>{69c058df-3f3f-46a3-8a34-7ed56210e956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="数学関数\WorldTransform">
+      <UniqueIdentifier>{4a5c8e3e-c29b-4e66-8549-55712d999780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="数学関数\AABB">
+      <UniqueIdentifier>{1e22755d-6cdd-4e58-a235-b544b2ed6439}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -59,6 +80,24 @@
     </ClCompile>
     <ClCompile Include="CameraController.cpp">
       <Filter>カメラ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\AABBFunction.cpp">
+      <Filter>数学関数\AABB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\Matrix4x4Function.cpp">
+      <Filter>数学関数\Matrix4x4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\Vector3Function.cpp">
+      <Filter>数学関数\Vector3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\WorldTransformFunction.cpp">
+      <Filter>数学関数\WorldTransform</Filter>
+    </ClCompile>
+    <ClCompile Include="Skydome.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>シーン\ゲーム</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -128,6 +167,24 @@
     </ClInclude>
     <ClInclude Include="CameraController.h">
       <Filter>カメラ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\AABBFunction.h">
+      <Filter>数学関数\AABB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\Matrix4x4Function.h">
+      <Filter>数学関数\Matrix4x4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\Vector3Function.h">
+      <Filter>数学関数\Vector3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\WorldTransformFunction.h">
+      <Filter>数学関数\WorldTransform</Filter>
+    </ClInclude>
+    <ClInclude Include="Skydome.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>シーン\ゲーム</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
