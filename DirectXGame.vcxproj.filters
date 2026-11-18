@@ -67,6 +67,15 @@
     <Filter Include="数学関数\AABB">
       <UniqueIdentifier>{1e22755d-6cdd-4e58-a235-b544b2ed6439}</UniqueIdentifier>
     </Filter>
+    <Filter Include="数学関数\Lerp">
+      <UniqueIdentifier>{b3dce3f4-b370-47ab-9397-69968e03ab6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\敵キャラ">
+      <UniqueIdentifier>{67051036-391e-4864-a32f-fb55fd7ade89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\敵キャラ">
+      <UniqueIdentifier>{5dd232f3-ceaa-4a18-8b9c-0c55512b506c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -98,6 +107,15 @@
     </ClCompile>
     <ClCompile Include="GameScene.cpp">
       <Filter>シーン\ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="LerpFunction.cpp">
+      <Filter>数学関数\Lerp</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalEnemy.cpp">
+      <Filter>ソース ファイル\敵キャラ</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>継承用</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -185,6 +203,15 @@
     </ClInclude>
     <ClInclude Include="GameScene.h">
       <Filter>シーン\ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="LerpFunction.h">
+      <Filter>数学関数\Lerp</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalEnemy.h">
+      <Filter>ヘッダー ファイル\敵キャラ</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>継承用</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

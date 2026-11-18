@@ -32,12 +32,25 @@ private:
 	WorldTransformFunction worldTransformF_;
 	AABBFunction aabb_;
 
+	
+	// ワールドトランスフォーム
+	KamataEngine::WorldTransform worldTransform_;
+	KamataEngine::Camera camera_;
+
 	// 自キャラ
 	Player* player_ = nullptr;
 	KamataEngine::Vector3 playerInitialPosition_;
 	KamataEngine::Model* playerModel_ = nullptr;
 	Skydome* skydome_ = nullptr;
 
+	// カメラコントローラー
+	CameraController* cameraController_ = nullptr;
+
 	// ブロック用
 	std::vector<std::vector<KamataEngine::WorldTransform*>> worldTransformBlocks_;
+
+	KamataEngine::Model* blockModel_ = nullptr;
+
+		// テクスチャハンドル
+	uint32_t textureHandle_ = 0;
 };

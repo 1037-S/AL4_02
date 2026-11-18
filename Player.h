@@ -32,6 +32,8 @@ private:
 	KamataEngine::Camera* camera_ = nullptr;
 	// 移動の基礎数値
 	KamataEngine::Vector3 velocity_ = {0.0f, 0.0f, 0.0f};
+
+	static inline const float kMoveSpeed_ = 0.3f;
 	// 天井と床
 	static inline const float kAttenuationLanding_ = 0.1f;
 
