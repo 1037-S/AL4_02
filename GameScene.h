@@ -5,6 +5,7 @@
 #include "WorldTransformFunction.h"
 #include "AABBFunction.h"
 #include "Player.h"
+#include "NormalEnemy.h"
 #include "Skydome.h"
 #include "CameraController.h"
 #include <vector>
@@ -42,6 +43,10 @@ private:
 	KamataEngine::Vector3 playerInitialPosition_;
 	KamataEngine::Model* playerModel_ = nullptr;
 	Skydome* skydome_ = nullptr;
+
+	// 敵キャラ
+	NormalEnemy* enemy_ = nullptr;
+	KamataEngine::Model* enemyModel_ = nullptr;
 
 	// カメラコントローラー
 	CameraController* cameraController_ = nullptr;

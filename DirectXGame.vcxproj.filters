@@ -117,6 +117,9 @@
     <ClCompile Include="Enemy.cpp">
       <Filter>継承用</Filter>
     </ClCompile>
+    <ClCompile Include="Vector2Function.cpp">
+      <Filter>数学関数\Vector2</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Resources\shaders\SpritePS.hlsl">
@@ -212,6 +215,9 @@
     </ClInclude>
     <ClInclude Include="Character.h">
       <Filter>継承用</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2Function.h">
+      <Filter>数学関数\Vector2</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

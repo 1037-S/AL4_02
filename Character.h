@@ -8,12 +8,16 @@
 
 class Character {
 public:
-	virtual AABBFunction GetAABB();
-	virtual AABBFunction GetBoxtoSphere();
+	virtual AABBFunction GetAABB() { return aabbF_; };
+	virtual AABBFunction GetBoxtoSphere() { return aabbF_; };
 
-	virtual void Initialize(KamataEngine::Model* model, KamataEngine::Camera* camera, const KamataEngine::Vector3& position);
-	virtual void Update();
-	virtual void Draw();
+	virtual void Initialize(KamataEngine::Model* model, KamataEngine::Camera* camera, const KamataEngine::Vector3& position) {
+		(void)model;
+		(void)camera;
+		(void)position;
+	};
+	virtual void Update() {};
+	virtual void Draw() {};
 
 	// ゲッター
 	virtual uint32_t GetMAXHP() const { return MAXHP_; }
@@ -22,7 +26,13 @@ public:
 	virtual uint32_t GetDEF() const { return DEF_; }
 
 	// ワールド座標を取得
-	virtual KamataEngine::Vector3 GetWorldPosition() const;
+	virtual KamataEngine::Vector3 GetWorldPosition() const {
+		KamataEngine::Vector3 worldPos;
+		worldPos.x = worldTransform_.matWorld_.m[3][0];
+		worldPos.y = worldTransform_.matWorld_.m[3][1];
+		worldPos.z = worldTransform_.matWorld_.m[3][2];
+		return worldPos;
+	};
 	// virtual void SetMapChipField(MapChipField* mapChipField) { mapChipField_ = mapChipField; }
 	virtual bool GetIsDead() const { return isDead_; }
 

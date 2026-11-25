@@ -1,5 +1,7 @@
 #pragma once
 #include "Enemy.h"
+
+
 class NormalEnemy : public Enemy {
 public:
 
@@ -7,7 +9,8 @@ public:
 	void Update()override;
 	void Draw()override;
 
+	
 
 private:
-
+	
 };
