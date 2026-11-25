@@ -28,8 +28,8 @@ void Player::PlayerMoveInput() {
 		move.z /= length;
 
 		// 2. 速度を掛けて移動量(velocity_)を決定
-		velocity_.x = move.x * kMoveSpeed_;
-		velocity_.z = move.z * kMoveSpeed_;
+		velocity_.x = move.x * moveSpeed_;
+		velocity_.z = move.z * moveSpeed_;
 
 		// 3. 進行方向にプレイヤーの向き（Y軸回転）を合わせる
 		// モデルが +Z 方向を正面としている場合の角度計算
@@ -40,28 +40,26 @@ void Player::PlayerMoveInput() {
 	}
 }
 
-KamataEngine::Vector3 Player::GetWorldPosition() const {
-	Vector3 worldPos;
-
-	worldPos.x = worldTransform_.matWorld_.m[3][0];
-	worldPos.y = worldTransform_.matWorld_.m[3][1];
-	worldPos.z = worldTransform_.matWorld_.m[3][2];
-
-	return worldPos;
-}
-
 void Player::Initialize(KamataEngine::Model* model, KamataEngine::Camera* camera, const KamataEngine::Vector3& position) { // NULLポインタチェック
 #ifdef _DEBUG
 	assert(model);
 	assert(camera);
 #endif // _DEBUG
-	playerModel_ = model;
+	model_ = model;
 	// playerModelAttack_ = modelAttack;
 	camera_ = camera;
 	// ワールド変換の初期化
 	worldTransformF_.WorldTransformInitialize(worldTransform_);
 	worldTransform_.Initialize();
 	worldTransform_.translation_ = position;
+
+	moveSpeed_ = kMoveSpeed_;
+	width_ = kWidth;
+	height_ = kHeight;
+	MAXHP_ = 100;
+	HP_ = MAXHP_;
+	ATK_ = 10;
+	DEF_ = 5;
 }
 
 void Player::Update() {
@@ -76,5 +74,5 @@ void Player::Update() {
 
 void Player::Draw() {
 	// 3Dモデルを描画する
-	playerModel_->Draw(worldTransform_, *camera_);
+	model_->Draw(worldTransform_, *camera_);
 }

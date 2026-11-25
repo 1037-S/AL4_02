@@ -167,6 +167,7 @@
     <ClCompile Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\Matrix4x4Function.cpp" />
     <ClCompile Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\Vector3Function.cpp" />
     <ClCompile Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\WorldTransformFunction.cpp" />
+    <ClCompile Include="BossEnemy.cpp" />
     <ClCompile Include="CameraController.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="GameScene.cpp" />
@@ -280,6 +281,7 @@
     <ClInclude Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\Matrix4x4Function.h" />
     <ClInclude Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\Vector3Function.h" />
     <ClInclude Include="..\..\..\..\TD2\TD2_02\KamataEngine20260409\DirectXGame\WorldTransformFunction.h" />
+    <ClInclude Include="BossEnemy.h" />
     <ClInclude Include="CameraController.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="Enemy.h" />
@@ -292,6 +294,7 @@
     <ClInclude Include="Skill.h" />
     <ClInclude Include="Skydome.h" />
     <ClInclude Include="Vector2Function.h" />
+    <ClInclude Include="Weapon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
